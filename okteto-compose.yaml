@@ -1,0 +1,9 @@
+version: "18.04"
+services:
+  worker:
+    build: .
+    environment:
+      - telegram_token=${telegram_token}
+      - user_ids=${user_ids}
+      - group_ids=${group_ids}
+      - gclone_para_override=${gclone_para_override}
